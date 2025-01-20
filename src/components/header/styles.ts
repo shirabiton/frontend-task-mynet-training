@@ -6,10 +6,9 @@ const useStyles = createUseStyles({
       backgroundColor: 'black',
       color: 'white',
       height: '5vw',
-      margin: '0',
-      padding: '0',
+      margin: '0 0 1vw 0',
       '& p': {
-        margin: '0',
+        margin: 0,
         padding: '1.4vw',
         cursor: 'pointer',
         fontWeight: '500',

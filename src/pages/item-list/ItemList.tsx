@@ -58,23 +58,22 @@ const ItemList: FC = () => {
     const screenWidth = window.screen.width;
     const connectionType =
         navigator.connection &&
-        "effectiveType" in navigator.connection &&
-        typeof navigator.connection.effectiveType === "string"
+            "effectiveType" in navigator.connection &&
+            typeof navigator.connection.effectiveType === "string"
             ? navigator.connection.effectiveType
             : "4g";
     const isSlowConnection = ["2g", "3g", "slow-2g"].includes(connectionType);
 
     useEffect(() => {
         setIsTransitioning(true);
-        const timeout = setTimeout(() => setIsTransitioning(false), 500); // משך האנימציה
+        const timeout = setTimeout(() => setIsTransitioning(false), 500);
         return () => clearTimeout(timeout);
     }, [location]);
 
     return (
         <div
-            className={`${classes.transitionWrapper} ${
-                isTransitioning ? "" : classes.transitionActive
-            }`}
+            className={`${classes.transitionWrapper} ${isTransitioning ? "" : classes.transitionActive
+                }`}
         >
             <div className={classes.ulContainer}>
                 <ul>

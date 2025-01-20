@@ -16,15 +16,15 @@ const ItemDetails: FC = () => {
     const imageQuality = currentItem ? isSlowConnection ? currentItem.thumbnails.lowQuality : currentItem.thumbnails.highQuality : '';
 
     return <div className={classes.singleItemContainer}>
-        {currentItem && imageQuality &&
-            <div className={classes.singleItem}>
+        {currentItem && imageQuality ?
+            (<div className={classes.singleItem}>
                 <h1>{currentItem.title}</h1>
                 <img src={screenWidth > 1024 ? imageQuality.highResolution : imageQuality.lowResolution} alt={currentItem.title} title={currentItem.title} className={classes.singleItemImg} />
                 <span className={globalClasses.metaData}>
                     <p>{currentItem.metaData.publisher}</p>
                     <p>{currentItem.metaData.date}</p>
                 </span>
-            </div>}
+            </div>) : (<p>פריט לא קיים</p>)}
     </div>
 }
 
