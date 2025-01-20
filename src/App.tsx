@@ -1,11 +1,7 @@
-import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
 import './App.css'
-import { Header } from './components/Header';
-import { ItemList } from './components/ItemList';
-import { ItemDetails } from './components/ItemDetails';
-import { NotFound } from './components/NotFound';
 import { createContext, useEffect, useState } from 'react';
 import Item from './types/Item';
+import { MainPage } from './pages/main-page/MainPage';
 
 export const ItemsContext = createContext<Item[]>([]);
 
@@ -23,15 +19,7 @@ function App() {
   return (
     <>
       <ItemsContext.Provider value={items}>
-        <BrowserRouter>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Navigate to="/items" />} />
-            <Route path="/items" element={<ItemList />} />
-            <Route path='/items/:index' element={<ItemDetails />} />
-            <Route path='*' element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
+        <MainPage />
       </ItemsContext.Provider>
     </>
   )
