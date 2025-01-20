@@ -24,6 +24,9 @@ const useStyles = createUseStyles({
             '&:first-child, &:last-child, &:nth-child(4n)': {
                 borderRight: 'none',
             },
+            '&:hover img': {
+                transform: 'scale(1.04)',
+            },
         },
     },
     ulContainer: {
