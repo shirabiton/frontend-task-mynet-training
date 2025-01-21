@@ -18,7 +18,7 @@ const useStyles = createUseStyles({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    gap: '3vw',
+    gap: '3vw'
   }
 });
 

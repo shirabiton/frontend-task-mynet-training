@@ -26,7 +26,7 @@ const ItemList: FC = () => {
                         ? item.thumbnails.lowQuality
                         : item.thumbnails.highQuality;
                     return (
-                        <li onClick={() => navigate(`/items/${index}`, { replace: true })} key={index}>
+                        <li onClick={() => navigate(`${index}`, { replace: true })} key={index}>
                             <span className={classes.itemText}>
                                 <h1>{item.title}</h1>
                                 <p>{item.description}</p>
