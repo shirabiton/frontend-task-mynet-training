@@ -7,6 +7,11 @@ const useStyles = createUseStyles({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    '& img': {
+      width: '30vw',
+      height: '30vw',
+      objectFit: 'cover'
+    }
   },
   singleItem: {
     width: '40vw',
@@ -14,11 +19,6 @@ const useStyles = createUseStyles({
     flexDirection: 'column',
     alignItems: 'center',
     gap: '3vw',
-  },
-  singleItemImg: {
-    width: '30vw',
-    height: '30vw',
-    objectFit: 'cover',
   }
 });
 

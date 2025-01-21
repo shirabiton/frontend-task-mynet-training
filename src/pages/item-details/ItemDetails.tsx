@@ -19,7 +19,7 @@ const ItemDetails: FC = () => {
         {currentItem && imageQuality ?
             (<div className={classes.singleItem}>
                 <h1>{currentItem.title}</h1>
-                <img src={screenWidth > 1024 ? imageQuality.highResolution : imageQuality.lowResolution} alt={currentItem.title} title={currentItem.title} className={classes.singleItemImg} />
+                <img src={screenWidth > 1024 ? imageQuality.highResolution : imageQuality.lowResolution} alt={currentItem.title} title={currentItem.title} />
                 <span className={globalClasses.metaData}>
                     <p>{currentItem.metaData.publisher}</p>
                     <p>{currentItem.metaData.date}</p>
