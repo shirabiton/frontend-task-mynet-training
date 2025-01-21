@@ -7,7 +7,7 @@ const useStyles = createUseStyles({
             fontWeight: '500'
         },
         p: {
-            fontSize: '1.6vw',
+            fontSize: '1.6vw'
         },
         button: {
             borderRadius: '20px',
@@ -26,7 +26,7 @@ const useStyles = createUseStyles({
         flexDirection: 'column',
         minHeight: '20vw',
         justifyContent: 'space-between',
-        alignItems: 'center',
+        alignItems: 'center'
     }
 })
 

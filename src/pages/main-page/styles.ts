@@ -39,6 +39,7 @@ const useGlobalStyles = createUseStyles({
       fontSize: '0.8vw',
     }
   },
+
   // Animation style
   transitionWrapper: {
     opacity: 0,

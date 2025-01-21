@@ -39,7 +39,6 @@ const ItemList: FC = () => {
                                 }
                                 alt={item.title}
                                 title={item.title}
-                                className={classes.listImg}
                             />
                             <span className={globalClasses.metaData}>
                                 <p>{item.metaData.publisher}</p>

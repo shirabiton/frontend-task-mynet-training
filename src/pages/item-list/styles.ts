@@ -25,22 +25,22 @@ const useStyles = createUseStyles({
             '&:first-child, &:last-child, &:nth-child(4n)': {
                 borderRight: 'none',
             },
+            '& img': {
+                width: '10vw',
+                height: '10vw',
+                objectFit: 'cover',
+                margin: 0,
+                padding: 0
+            },
             '&:hover img': {
                 transform: 'scale(1.04)',
-            },
-        },
+            }
+        }
     },
     ulContainer: {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-    },
-    listImg: {
-        width: '10vw',
-        height: '10vw',
-        objectFit: 'cover',
-        margin: 0,
-        padding: 0,
     },
     itemText: {
         display: 'flex',
