@@ -4,9 +4,12 @@ const useStyles = createUseStyles({
     '@global': {
         ul: {
             listStyle: 'none',
-            display: 'flex',
-            flexWrap: 'wrap',
+            display: 'grid',
+            gridTemplateColumns: 'repeat(3, 1fr)',
+            gap: '10px',
             maxWidth: '90%',
+            margin: ' 0 auto',
+            padding: 0
         },
         li: {
             width: '25vw',
