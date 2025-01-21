@@ -18,6 +18,17 @@ const useGlobalStyles = createUseStyles({
     p: {
       fontSize: '0.9vw'
     },
+    '::-webkit-scrollbar': {
+      width: '10px'
+    },
+    '::-webkit-scrollbar-thumb': {
+      backgroundColor: 'white',
+      border: '1px black solid',
+      borderRadius: '10px'
+    },
+    '::-webkit-scrollbar-track': {
+      backgroundColor: 'black'
+    }
   },
   metaData: {
     width: '60%',
