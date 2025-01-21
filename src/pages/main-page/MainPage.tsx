@@ -13,7 +13,7 @@ const MainPage: FC = () => {
 
     useEffect(() => {
         setIsTransitioning(true);
-        const timeout = setTimeout(() => setIsTransitioning(false), 400);
+        const timeout = setTimeout(() => setIsTransitioning(false), 300);
         return () => clearTimeout(timeout);
     }, [location]);
 
