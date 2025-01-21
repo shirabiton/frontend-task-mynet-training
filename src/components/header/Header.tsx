@@ -8,7 +8,7 @@ const Header: FC = () => {
     useStyles();
 
     return <header>
-        <p onClick={() => navigate('/items')} title="לדף הבית">Shopping</p>
+        <p onClick={() => navigate('/items', { replace: true })} title="לדף הבית">Shopping</p>
     </header>
 }
 export { Header }

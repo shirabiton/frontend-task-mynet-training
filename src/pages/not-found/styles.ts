@@ -4,6 +4,7 @@ const useStyles = createUseStyles({
     '@global': {
         h1: {
             fontSize: '7vw',
+            fontWeight: '500'
         },
         p: {
             fontSize: '1.6vw',

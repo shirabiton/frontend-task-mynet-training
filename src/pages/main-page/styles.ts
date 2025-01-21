@@ -27,6 +27,16 @@ const useGlobalStyles = createUseStyles({
       color: '#565B5E',
       fontSize: '0.8vw',
     }
+  },
+  // Animation style
+  transitionWrapper: {
+    opacity: 0,
+    transform: "translateY(10px)",
+    transition: "opacity 0.5s ease, transform 0.5s ease",
+  },
+  transitionActive: {
+    opacity: 1,
+    transform: "translateY(0)",
   }
 })
 

@@ -6,8 +6,7 @@ const useStyles = createUseStyles({
             listStyle: 'none',
             display: 'flex',
             flexWrap: 'wrap',
-            width: '90%',
-            justifyContent: 'space-between',
+            maxWidth: '90%',
         },
         li: {
             width: '25vw',
@@ -18,9 +17,11 @@ const useStyles = createUseStyles({
             cursor: 'pointer',
             justifyContent: 'space-between',
             boxSizing: 'border-box',
-            margin: '30px 0',
+            margin: '30px',
             textAlign: 'center',
             borderRight: '1px solid #ccc',
+            padding: '0 30px 0 0',
+            // Remove right border for the extreme items in each row
             '&:first-child, &:last-child, &:nth-child(4n)': {
                 borderRight: 'none',
             },
@@ -45,18 +46,7 @@ const useStyles = createUseStyles({
         display: 'flex',
         flexDirection: 'column',
         gap: '0.3vw'
-    },
-
-    // === animation
-    transitionWrapper: {
-        opacity: 0,
-        transform: "translateY(10px)",
-        transition: "opacity 0.5s ease, transform 0.5s ease",
-    },
-    transitionActive: {
-        opacity: 1,
-        transform: "translateY(0)",
-    },
+    }
 });
 
 export default useStyles;
