@@ -1,9 +1,9 @@
-import Media from "./Media";
+import LQIPMedia from "./LQIPMedia";
 import MetaData from "./MetaData";
 
 type Item = {
-    thumbnails: Media;
-    content: Media;
+    thumbnails: LQIPMedia;
+    content: LQIPMedia;
     title: string;
     description: string;
     metaData: MetaData;

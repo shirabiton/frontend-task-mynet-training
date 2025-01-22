@@ -1,7 +1,7 @@
 import Quality from "./Quality";
 
-type Media = {
+type LQIPMedia  = {
     highQuality: Quality;
     lowQuality: Quality;
 };
-export default Media;
+export default LQIPMedia ;

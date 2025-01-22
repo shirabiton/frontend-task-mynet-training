@@ -1,7 +1,7 @@
 import { FC } from "react";
-import Media from "../../types/Media";
+import LQIPMedia from "../../types/LQIPMedia";
 
-const ItemImage: FC<{ thumbnails: Media, title: string }> = ({ thumbnails, title }) => {
+const ItemImage: FC<{ thumbnails: LQIPMedia, title: string }> = ({ thumbnails, title }) => {
     const screenWidth = window.screen.width;
     const connectionType =
         navigator.connection &&
