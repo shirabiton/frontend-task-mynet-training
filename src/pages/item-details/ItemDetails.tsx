@@ -2,8 +2,8 @@ import { FC, useContext } from "react"
 import { useParams } from "react-router-dom"
 import useStyles from "./styles";
 import useGlobalStyles from "../main-page/styles";
-import { ItemsContext } from "../../context/ItemsProvider";
 import { ItemImage } from "../../components/item-image/ItemImage";
+import { ItemsContext } from "../../context/ItemsContext";
 
 const ItemDetails: FC = () => {
     const { index } = useParams();

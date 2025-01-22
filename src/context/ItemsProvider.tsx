@@ -1,7 +1,6 @@
-import { createContext, useState, useEffect, ReactNode, FC } from 'react';
+import { useState, useEffect, ReactNode, FC } from 'react';
 import Item from '../types/Item';
-
-export const ItemsContext = createContext<Item[]>([]);
+import { ItemsContext } from './ItemsContext';
 
 const ItemsProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const [items, setItems] = useState<Item[]>([]);
