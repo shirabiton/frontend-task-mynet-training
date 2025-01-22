@@ -3,12 +3,11 @@ import { useNavigate } from "react-router-dom";
 import Item from "../../types/Item";
 import useStyles from "./styles";
 import { ItemCard } from "../../components/item-card/ItemCard";
-import { ItemsContext } from "../../context/ItemsContext";
+import { ItemsContext } from "../../context/itemsContext";
 
 const ItemList: FC = () => {
     const classes = useStyles();
     const navigate = useNavigate();
-
     const items: Item[] = useContext(ItemsContext);
 
     return <div className={classes.ulContainer}>

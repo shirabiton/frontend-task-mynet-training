@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 import useStyles from "./styles";
 import useGlobalStyles from "../main-page/styles";
 import { ItemImage } from "../../components/item-image/ItemImage";
-import { ItemsContext } from "../../context/ItemsContext";
+import { ItemsContext } from "../../context/itemsContext";
 
 const ItemDetails: FC = () => {
     const { index } = useParams();
