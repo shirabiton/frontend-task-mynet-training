@@ -1,7 +1,7 @@
 import { FC } from "react";
 import LQIPMedia from "../../types/LQIPMedia";
 
-const ItemImage: FC<{ thumbnails: LQIPMedia, title: string }> = ({ thumbnails, title }) => {
+const ItemImage: FC<{ image: LQIPMedia, title: string }> = ({ image, title }) => {
     const screenWidth = window.screen.width;
     const connectionType =
         navigator.connection &&
@@ -9,8 +9,8 @@ const ItemImage: FC<{ thumbnails: LQIPMedia, title: string }> = ({ thumbnails, t
             typeof navigator.connection.effectiveType === "string" ? navigator.connection.effectiveType : "4g";
     const isSlowConnection = ["2g", "3g", "slow-2g"].includes(connectionType);
     const imageQuality = isSlowConnection
-        ? thumbnails.lowQuality
-        : thumbnails.highQuality;
+        ? image.lowQuality
+        : image.highQuality;
 
     return <img
         src={

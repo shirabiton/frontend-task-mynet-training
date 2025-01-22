@@ -17,7 +17,7 @@ const ItemDetails: FC = () => {
             ?
             (<div className={classes.singleItem}>
                 <h1>{currentItem.title}</h1>
-                <ItemImage thumbnails={currentItem.thumbnails} title={currentItem.title}></ItemImage>
+                <ItemImage image={currentItem.content} title={currentItem.title}></ItemImage>
                 <span className={globalClasses.metaData}>
                     <p>{currentItem.metaData.publisher}</p>
                     <p>{currentItem.metaData.date}</p>
