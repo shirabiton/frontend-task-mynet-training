@@ -7,36 +7,15 @@ const useStyles = createUseStyles({
             display: 'grid',
             gridTemplateColumns: 'repeat(3, 1fr)',
             gap: '10px',
-            maxWidth: '90%',
-            margin: ' 0 auto',
-            padding: 0
+            padding: 0,
+            margin: '0 auto'
         },
         li: {
-            width: '25vw',
-            minHeight: '20vw',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            cursor: 'pointer',
-            justifyContent: 'space-between',
-            boxSizing: 'border-box',
-            margin: '30px',
-            textAlign: 'center',
             borderRight: '1px solid #ccc',
-            padding: '0 30px 0 0',
+            margin: '30px',
             // Remove right border for the extreme items in each row
             '&:first-child, &:last-child, &:nth-child(4n)': {
-                borderRight: 'none',
-            },
-            '& img': {
-                width: '10vw',
-                height: '10vw',
-                objectFit: 'cover',
-                margin: 0,
-                padding: 0
-            },
-            '&:hover img': {
-                transform: 'scale(1.04)',
+                borderRight: 'none'
             }
         }
     },
@@ -44,11 +23,6 @@ const useStyles = createUseStyles({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-    },
-    itemText: {
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '0.3vw'
     }
 });
 
