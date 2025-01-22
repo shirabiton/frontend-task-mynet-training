@@ -1,9 +1,9 @@
 import { FC, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import Item from "../../types/Item";
-import useStyles from "./styles";
 import { ItemCard } from "../../components/item-card/ItemCard";
 import { ItemsContext } from "../../context/itemsContext";
+import Item from "../../types/Item";
+import useStyles from "./styles";
 
 const ItemList: FC = () => {
     const classes = useStyles();
@@ -23,3 +23,4 @@ const ItemList: FC = () => {
 };
 
 export { ItemList };
+

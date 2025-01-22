@@ -1,7 +1,7 @@
-import './App.css'
-import { MainPage } from './pages/main-page/MainPage';
 import { BrowserRouter } from 'react-router-dom';
+import './App.css';
 import { ItemsProvider } from './context/ItemsProvider';
+import { MainPage } from './pages/main-page/MainPage';
 
 function App() {
 

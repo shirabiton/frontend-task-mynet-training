@@ -5,17 +5,14 @@ import { ItemList } from "../item-list/ItemList";
 import { NotFound } from "../not-found/NotFound";
 import { ItemDetails } from "../item-details/ItemDetails";
 import useGlobalStyles from "./styles";
+import { handlePageTransitioning } from "./functions";
 
 const MainPage: FC = () => {
     const location = useLocation();
     const classes = useGlobalStyles();
     const [isTransitioning, setIsTransitioning] = useState(false);
 
-    useEffect(() => {
-        setIsTransitioning(true);
-        const timeout = setTimeout(() => setIsTransitioning(false), 100);
-        return () => clearTimeout(timeout);
-    }, [location]);
+    useEffect(() => { const timeOut = handlePageTransitioning(setIsTransitioning); return () => clearTimeout(timeOut); }, [location]);
 
     return <div className={`${classes.transitionWrapper} ${isTransitioning ? "" : classes.transitionActive}`}>
         <Header />
