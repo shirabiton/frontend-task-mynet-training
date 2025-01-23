@@ -12,7 +12,7 @@ const useStyles = createUseStyles({
         },
         li: {
             borderRight: '1px solid #ccc',
-            margin: '30px',
+            margin: '3vw',
             // Remove right border for the extreme items in each row
             '&:first-child, &:last-child, &:nth-child(4n)': {
                 borderRight: 'none'
