@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FC } from "react";
-import LQIPMedia from "../../types/LQIPMedia";
+import LQIPMedia from "../../types/lqip-media.type";
 import { isSlowConnection } from "./functions";
 
 const ItemImage: FC<{ image: LQIPMedia, title: string, index: string }> = ({ image, title, index }) => {

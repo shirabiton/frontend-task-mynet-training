@@ -1,5 +1,5 @@
-import LQIPMedia from "./LQIPMedia";
-import MetaData from "./MetaData";
+import LQIPMedia from "./lqip-media.type";
+import MetaData from "./meta-data.type";
 
 type Item = {
     thumbnails: LQIPMedia;

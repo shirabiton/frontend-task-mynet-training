@@ -1,6 +1,6 @@
 import { FC } from "react";
 import useGlobalStyles from "../../pages/main-page/styles";
-import Item from "../../types/Item";
+import Item from "../../types/item.type";
 import { ItemImage } from "../item-image/ItemImage";
 import useStyles from "./styles";
 

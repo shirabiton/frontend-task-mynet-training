@@ -1,4 +1,4 @@
-import Quality from "./Quality";
+import Quality from "./quality.type";
 
 type LQIPMedia  = {
     highQuality: Quality;
