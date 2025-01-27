@@ -1,7 +1,7 @@
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import { ItemsProvider } from './context/ItemsProvider';
-import { MainPage } from './pages/main-page/MainPage';
+import { ItemsProvider } from './contexts/ItemContext/ItemsProvider';
+import { MainPage } from './pages/MainPage/MainPage';
 
 function App() {
 

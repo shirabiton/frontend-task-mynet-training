@@ -1,5 +1,5 @@
-import { FC } from "react"
-import { useNavigate } from "react-router-dom"
+import { FC } from "react";
+import { useNavigate } from "react-router-dom";
 import useStyles from "./styles";
 
 const Header: FC = () => {
@@ -11,4 +11,5 @@ const Header: FC = () => {
         <p onClick={() => navigate('/items', { replace: true })} title="לדף הבית">Shopping</p>
     </header>
 }
-export { Header }
+export { Header };
+

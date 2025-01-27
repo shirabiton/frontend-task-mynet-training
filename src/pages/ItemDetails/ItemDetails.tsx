@@ -1,8 +1,8 @@
 import { FC, useContext } from "react";
 import { useParams } from "react-router-dom";
-import { ItemImage } from "../../components/item-image/ItemImage";
-import { ItemsContext } from "../../context/itemsContext";
-import useGlobalStyles from "../main-page/styles";
+import { ItemImage } from "../../components/ItemImage/ItemImage";
+import { ItemsContext } from "../../contexts/ItemContext/ItemsContext";
+import useGlobalStyles from "../MainPage/styles";
 import useStyles from "./styles";
 
 const ItemDetails: FC = () => {
@@ -26,3 +26,4 @@ const ItemDetails: FC = () => {
 }
 
 export { ItemDetails };
+

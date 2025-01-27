@@ -1,7 +1,7 @@
 import { FC } from "react";
-import useGlobalStyles from "../../pages/main-page/styles";
+import useGlobalStyles from "../../pages/MainPage/styles";
 import Item from "../../types/item.type";
-import { ItemImage } from "../item-image/ItemImage";
+import { ItemImage } from "../ItemImage/ItemImage";
 import useStyles from "./styles";
 
 const ItemCard: FC<{ item: Item, index: string }> = ({ item, index }) => {

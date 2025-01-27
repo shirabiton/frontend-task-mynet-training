@@ -1,7 +1,7 @@
-import { useState, useEffect, ReactNode, FC } from 'react';
-import Item from '../types/item.type';
-import { ItemsContext } from './itemsContext';
+import { FC, ReactNode, useEffect, useState } from 'react';
+import Item from '../../types/item.type';
 import { fetchItems } from './functions';
+import { ItemsContext } from './ItemsContext';
 
 const ItemsProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const [items, setItems] = useState<Item[]>([]);
@@ -14,4 +14,4 @@ const ItemsProvider: FC<{ children: ReactNode }> = ({ children }) => {
     {children}
   </ItemsContext.Provider>
 }
-export { ItemsProvider }
+export { ItemsProvider };

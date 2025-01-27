@@ -1,9 +1,9 @@
 import { FC } from "react"
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { Header } from "../../components/header/Header";
-import { ItemList } from "../item-list/ItemList";
-import { NotFound } from "../not-found/NotFound";
-import { ItemDetails } from "../item-details/ItemDetails";
+import { Header } from "../../components/Header/Header";
+import { ItemList } from "../ItemList/ItemList";
+import { NotFound } from "../NotFound/NotFound";
+import { ItemDetails } from "../ItemDetails/ItemDetails";
 
 
 const MainPage: FC = () => {

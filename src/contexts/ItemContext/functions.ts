@@ -1,4 +1,4 @@
-import Item from "../types/item.type";
+import Item from "../../types/item.type";
 
 export const fetchItems = (setItems: (items: React.SetStateAction<Item[]>) => void) => {
     fetch('/items.mockup.json')

@@ -1,7 +1,7 @@
 import { FC, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { ItemCard } from "../../components/item-card/ItemCard";
-import { ItemsContext } from "../../context/itemsContext";
+import { ItemCard } from "../../components/ItemCard/ItemCard";
+import { ItemsContext } from "../../contexts/ItemContext/ItemsContext";
 import Item from "../../types/item.type";
 import useStyles from "./styles";
 
@@ -22,3 +22,4 @@ const ItemList: FC = () => {
 };
 
 export { ItemList };
+
