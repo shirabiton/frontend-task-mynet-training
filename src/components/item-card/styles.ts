@@ -12,15 +12,18 @@ const useStyles = createUseStyles({
         boxSizing: 'border-box',
         textAlign: 'center',
         padding: '0 3.5vw 0 0',
+        overflow: 'hidden',
         '& img': {
             width: '10vw',
             height: '10vw',
             objectFit: 'cover',
             margin: 0,
-            padding: 0
+            padding: 0,
+            aspectRatio: '1 / 1',
+            transition: 'transform 0.3s ease'
         },
         '&:hover img': {
-            transform: 'scale(1.04)',
+            transform: 'scale(1.15)',
         }
     },
     itemText: {
