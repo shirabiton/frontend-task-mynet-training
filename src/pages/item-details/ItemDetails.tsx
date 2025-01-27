@@ -8,16 +8,16 @@ import useStyles from "./styles";
 const ItemDetails: FC = () => {
     const { index } = useParams();
     const classes = useStyles();
-    const globalClasses = useGlobalStyles();
     const items = useContext(ItemsContext);
     const currentItem = items[Number(index)];
+    useGlobalStyles();
 
     return <div className={classes.singleItemContainer}>
         {currentItem ?
             (<div className={classes.singleItem}>
                 <h1>{currentItem.title}</h1>
                 <ItemImage image={currentItem.content} title={currentItem.title} index={String(index)}></ItemImage>
-                <span className={globalClasses.metaData}>
+                <span className={classes.metaData}>
                     <p>{currentItem.metaData.publisher}</p>
                     <p>{currentItem.metaData.date}</p>
                 </span>

@@ -7,17 +7,21 @@ import useStyles from "./styles";
 const ItemCard: FC<{ item: Item, index: string }> = ({ item, index }) => {
 
     const classes = useStyles();
-    const globalClasses = useGlobalStyles();
+    useGlobalStyles();
 
-    return <span className={classes.card}>
+    return <span className={classes.cardContainer}>
+        <span className={classes.cardContent}>
         <span className={classes.itemText}>
             <h1>{item.title}</h1>
             <p>{item.description}</p>
         </span>
-        <span className={classes.imgContainer}>
-            <ItemImage image={item.thumbnails} title={item.title} index={index}></ItemImage>
+        <span>
+            <span className={classes.imgContainer}>
+                <ItemImage image={item.thumbnails} title={item.title} index={index}></ItemImage>
+            </span>
         </span>
-        <span className={globalClasses.metaData}>
+    </span>
+        <span className={classes.metaData}>
             <p>{item.metaData.publisher}</p>
             <p>{item.metaData.date}</p>
         </span>

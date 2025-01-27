@@ -13,7 +13,7 @@ const ItemList: FC = () => {
     return <div className={classes.ulContainer}>
         <ul>
             {items && items.map((item, index) =>
-            (<li onClick={() => navigate(`${index}`, { replace: true })} key={index}>
+            (<li onClick={() => navigate(`${index}`, { replace: true })} key={index} >
                 <ItemCard item={item} index={String(index)}></ItemCard>
             </li>))
             }

@@ -3,22 +3,35 @@ import { createUseStyles } from 'react-jss';
 const useStyles = createUseStyles({
   singleItemContainer: {
     width: '100%',
-    minHeight: '90vh',
+    minHeight: '100vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     '& img': {
-      width: '30vw',
-      height: '30vw',
+      minWidth: '40vw',
+      height: '70vh',
       objectFit: 'cover'
     }
   },
   singleItem: {
-    width: '40vw',
+    width: '85%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    justifyContent: 'center',
     gap: '3vw'
+  },
+  metaData: {
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'space-between',
+    '& p': {
+      color: '#565B5E',
+      fontSize: '0.8rem',
+    },
+    '@media (min-width: 1024px)': {
+      width: '50%',
+    }
   }
 });
 
