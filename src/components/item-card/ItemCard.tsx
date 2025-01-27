@@ -14,7 +14,9 @@ const ItemCard: FC<{ item: Item, index: string }> = ({ item, index }) => {
             <h1>{item.title}</h1>
             <p>{item.description}</p>
         </span>
-        <ItemImage image={item.thumbnails} title={item.title} index={index}></ItemImage>
+        <span className={classes.imgContainer}>
+            <ItemImage image={item.thumbnails} title={item.title} index={index}></ItemImage>
+        </span>
         <span className={globalClasses.metaData}>
             <p>{item.metaData.publisher}</p>
             <p>{item.metaData.date}</p>

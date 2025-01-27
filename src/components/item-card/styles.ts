@@ -30,6 +30,11 @@ const useStyles = createUseStyles({
         display: 'flex',
         flexDirection: 'column',
         gap: '0.3vw'
+    },
+    imgContainer: {
+        width: '10vw',
+        height: '10vw',
+        overflow: 'hidden'
     }
 });
 
