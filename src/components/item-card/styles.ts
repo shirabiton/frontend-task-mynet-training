@@ -12,9 +12,9 @@ const useStyles = createUseStyles({
         flexDirection: 'column',
         alignItems: 'center',
         cursor: 'pointer',
-        justifyContent: 'space-around',
         boxSizing: 'border-box',
         textAlign: 'center',
+        justifyContent: 'space-around',
         padding: '0 3.5vw 0 0',
         overflow: 'hidden',
         '& img': {
@@ -30,6 +30,7 @@ const useStyles = createUseStyles({
             }
         },
         '@media (max-width: 1023px)': {
+            justifyContent: 'space-between',
             width: '70vw',
             flexDirection: 'row',
             textAlign: 'right',
@@ -57,11 +58,14 @@ const useStyles = createUseStyles({
         alignSelf: 'center',
         '& p': {
             color: '#565B5E',
-            fontSize: '0.8rem'
+            fontSize: '0.6rem'
         },
         '@media (min-width: 1024px)': {
             width: '50%',
-            padding: '0 3.5vw 0 0'
+            padding: '0 3.5vw 0 0',
+            '& p': {
+                fontSize: '0.8rem'
+            }
         }
     }
 });

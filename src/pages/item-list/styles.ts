@@ -7,9 +7,9 @@ const useStyles = createUseStyles({
             display: 'flex',
             flexDirection: 'column',
             '@media (min-width: 1024px)': {
+                gap: '10px',
                 display: 'grid',
                 gridTemplateColumns: 'repeat(3, 1fr)',
-                gap: '10px',
                 padding: 0,
                 margin: '0 auto'
             }
@@ -37,7 +37,7 @@ const useStyles = createUseStyles({
         alignItems: 'center'
     }
 
-    
+
     // animated: {
     //     '& img': {
     //         animationName: '$cssAnimation',
