@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { FC, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { ItemImage } from "../../components/item-image/ItemImage";
@@ -13,9 +12,7 @@ const ItemDetails: FC = () => {
     const items = useContext(ItemsContext);
     const currentItem = items[Number(index)];
 
-    return <motion.div
-        className={classes.singleItemContainer}
-        layoutId={`item-${index}`}>
+    return <div className={classes.singleItemContainer}>
         {currentItem ?
             (<div className={classes.singleItem}>
                 <h1>{currentItem.title}</h1>
@@ -25,7 +22,7 @@ const ItemDetails: FC = () => {
                     <p>{currentItem.metaData.date}</p>
                 </span>
             </div>) : (<p>פריט לא קיים</p>)}
-    </motion.div>
+    </div>
 }
 
 export { ItemDetails };

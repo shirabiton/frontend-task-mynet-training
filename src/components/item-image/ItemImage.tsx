@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { FC } from "react";
 import LQIPMedia from "../../types/lqip-media.type";
 import { isSlowConnection } from "./functions";
@@ -9,12 +8,11 @@ const ItemImage: FC<{ image: LQIPMedia, title: string, index: string }> = ({ ima
     const isSlow = isSlowConnection(connectionType);
     const baseUrl = isSlow ? image.lowQuality : image.highQuality;
 
-    return <motion.img
+    return <img
         src={baseUrl.lowResolution} // default url
         srcSet={`${baseUrl.lowResolution} 400w, ${baseUrl.highResolution} 800w`}
         alt={title}
         title={title}
-        layoutId={`image-${index}`}
     />
 }
 export { ItemImage };
