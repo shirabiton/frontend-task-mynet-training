@@ -1,5 +1,5 @@
 import { FC, useContext } from "react";
-import { ItemCard } from "../../components/ItemCard/ItemCard";
+import ItemCard from "../../components/ItemCard";
 import { ItemsContext } from "../../contexts/ItemContext/ItemsContext";
 import Item from "../../types/item.type";
 import useStyles from "./styles";
@@ -19,4 +19,4 @@ const ItemList: FC = () => {
     </div>
 };
 
-export { ItemList };
+export default ItemList;

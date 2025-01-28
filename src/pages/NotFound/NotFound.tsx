@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { useNavigate } from "react-router-dom";
-import useStyles from "./styles";
 import useGlobalStyles from "../MainPage/styles";
+import useStyles from "./styles";
 
 const NotFound: FC = () => {
     const navigate = useNavigate();
@@ -14,4 +14,4 @@ const NotFound: FC = () => {
         <button onClick={() => navigate('/items')}>לדף הבית</button>
     </div>
 }
-export { NotFound }
+export default NotFound;

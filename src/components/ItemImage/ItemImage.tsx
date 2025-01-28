@@ -15,4 +15,4 @@ const ItemImage: FC<{ image: LQIPMedia, title: string }> = ({ image, title }) =>
         title={title}
     />
 }
-export { ItemImage };
+export default ItemImage;

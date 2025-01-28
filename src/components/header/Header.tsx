@@ -11,5 +11,5 @@ const Header: FC = () => {
         <p onClick={() => navigate('/items', { replace: true })} title="לדף הבית">Shopping</p>
     </header>
 }
-export { Header };
+export default Header;
 

@@ -1,6 +1,6 @@
 import { FC, useContext } from "react";
 import { useParams } from "react-router-dom";
-import { ItemImage } from "../../components/ItemImage/ItemImage";
+import ItemImage from "../../components/ItemImage";
 import { ItemsContext } from "../../contexts/ItemContext/ItemsContext";
 import useGlobalStyles from "../MainPage/styles";
 import useStyles from "./styles";
@@ -25,5 +25,5 @@ const ItemDetails: FC = () => {
     </div>
 }
 
-export { ItemDetails };
+export default ItemDetails;
 

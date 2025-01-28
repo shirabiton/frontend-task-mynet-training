@@ -1,10 +1,10 @@
 import { FC, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import useGlobalStyles from "../../pages/MainPage/styles";
 import Item from "../../types/item.type";
-import { ItemImage } from "../ItemImage/ItemImage";
-import useStyles from "./styles";
+import ItemImage from "../ItemImage";
 import { handleItemClick } from "./functions";
-import { useNavigate } from "react-router-dom";
+import useStyles from "./styles";
 
 const ItemCard: FC<{ item: Item, index: number }> = ({ item, index }) => {
     const navigate = useNavigate();
@@ -35,5 +35,5 @@ const ItemCard: FC<{ item: Item, index: number }> = ({ item, index }) => {
         </span>
     </span>
 }
-export { ItemCard };
+export default ItemCard;
 

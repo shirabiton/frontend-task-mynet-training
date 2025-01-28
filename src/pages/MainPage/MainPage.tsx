@@ -1,10 +1,9 @@
-import { FC } from "react"
-import { Routes, Route, Navigate } from 'react-router-dom';
-import { Header } from "../../components/Header/Header";
-import { ItemList } from "../ItemList/ItemList";
-import { NotFound } from "../NotFound/NotFound";
-import { ItemDetails } from "../ItemDetails/ItemDetails";
-
+import { FC } from "react";
+import { Navigate, Route, Routes } from 'react-router-dom';
+import Header from "../../components/header";
+import ItemDetails from "../ItemDetails";
+import ItemList from "../ItemList";
+import NotFound from "../NotFound";
 
 const MainPage: FC = () => {
     return <>
@@ -17,4 +16,4 @@ const MainPage: FC = () => {
         </Routes>
     </>
 }
-export { MainPage }
+export default MainPage;
