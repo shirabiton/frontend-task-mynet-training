@@ -12,7 +12,7 @@ const ItemCard: FC<{ item: Item, index: number }> = ({ item, index }) => {
     const [isAnimated, setIsAnimated] = useState(false);
     const [leftPosition, setLeftPosition] = useState(0);
     const [topPosition, setTopPosition] = useState(0);
-    const [imageUrl, setImageUrl] = useState(item.thumbnails);
+    const [imageUrl, setImageUrl] = useState(item.content);
     const elementRef = useRef<HTMLDivElement>(null);
     const classes = useStyles({ topPosition: topPosition, leftPosition: leftPosition });
     useGlobalStyles();
