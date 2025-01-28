@@ -79,7 +79,7 @@ const useStyles = createUseStyles({
             height: '10vw',
             willChange: 'transform',
             animationName: '$cssAnimation',
-            animationDuration: '0.1s',
+            animationDuration: '0.3s',
             animationIterationCount: '1',
             animationTimingFunction: 'ease-in-out',
             animationFillMode: 'forwards',
@@ -93,7 +93,7 @@ const useStyles = createUseStyles({
             transform: 'scale(1)'
         },
         to: {
-            top: '23%',
+            top: '25%',
             left: '45%',
             transform: 'scale(3.5)',
             opacity: '0.7'

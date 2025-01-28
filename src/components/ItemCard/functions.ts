@@ -16,9 +16,9 @@ export const handleItemClick = (item: Item, index: number, elementRef: HTMLDivEl
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
-        }), 150)
+        }), 100)
     setTimeout(() => {
         navigate(`${index}`);
         setIsAnimated(false);
-    }, 200);
+    }, 300);
 }
