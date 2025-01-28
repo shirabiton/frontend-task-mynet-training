@@ -1,4 +1,5 @@
 import { createUseStyles } from 'react-jss';
+import { styleProp } from './types';
 
 const useStyles = createUseStyles({
     cardContainer: {
@@ -66,6 +67,36 @@ const useStyles = createUseStyles({
             '& p': {
                 fontSize: '0.8rem'
             }
+        }
+    },
+    animated: {
+        '& $cardContent span $imgContainer': {
+            overflow: 'visible'
+        },
+        '& img': {
+            position: 'absolute',
+            width: '10vw',
+            height: '10vw',
+            willChange: 'transform',
+            animationName: '$cssAnimation',
+            animationDuration: '0.8s',
+            animationIterationCount: '1',
+            animationTimingFunction: 'ease-in-out',
+            animationFillMode: 'forwards',
+            zIndex: '1000',
+            top: (props: styleProp) => `${props.topPosition}px`,
+            left: (props: styleProp) => `${props.leftPosition}px`,
+        }
+    },
+    '@keyframes cssAnimation': {
+        from: {
+            transform: 'scale(1)'
+        },
+        to: {
+            top: '30%',
+            left: '45%',
+            transform: 'scale(3.5)',
+            opacity: '0.7'
         }
     }
 });

@@ -34,29 +34,9 @@ const useStyles = createUseStyles({
     ulContainer: {
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        position: 'relative'
     }
-
-
-    // animated: {
-    //     '& img': {
-    //         animationName: '$cssAnimation',
-    //         animationDuration: '3s',
-    //         animationIterationCount: '1',
-    //         animationTimingFunction: 'ease',
-    //         animationFillMode: 'forwards'
-    //     }
-    // },
-    // '@keyframes cssAnimation': {
-    //     from: {
-    //         transform: 'scale(1) translate(0, 0)',
-    //     },
-    //     to: {
-    //         top: '50%',
-    //         left: '50%',
-    //         transform: 'scale(2) translate(-50%, -50%)'
-    //     }
-    // }
 });
 
 export default useStyles;
