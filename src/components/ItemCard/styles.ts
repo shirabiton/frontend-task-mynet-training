@@ -93,7 +93,7 @@ const useStyles = createUseStyles({
             transform: 'scale(1)'
         },
         to: {
-            top: '30%',
+            top: '23%',
             left: '45%',
             transform: 'scale(3.5)',
             opacity: '0.7'

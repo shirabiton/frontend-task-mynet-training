@@ -1,7 +1,7 @@
 import Item from "../../types/item.type";
 import LQIPMedia from "../../types/lqip-media.type";
 
-export const handleClick = (item: Item, index: number, elementRef: HTMLDivElement | null, navigate: (to: string, options?: { replace?: boolean; state?: unknown }) => void,
+export const handleItemClick = (item: Item, index: number, elementRef: HTMLDivElement | null, navigate: (to: string, options?: { replace?: boolean; state?: unknown }) => void,
     setLeftPosition: React.Dispatch<React.SetStateAction<number>>, setTopPosition: React.Dispatch<React.SetStateAction<number>>,
     setImageUrl: React.Dispatch<React.SetStateAction<LQIPMedia>>, setIsAnimated: React.Dispatch<React.SetStateAction<boolean>>) => {
 

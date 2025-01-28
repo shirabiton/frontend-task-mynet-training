@@ -3,7 +3,7 @@ import useGlobalStyles from "../../pages/MainPage/styles";
 import Item from "../../types/item.type";
 import { ItemImage } from "../ItemImage/ItemImage";
 import useStyles from "./styles";
-import { handleClick } from "./functions";
+import { handleItemClick } from "./functions";
 import { useNavigate } from "react-router-dom";
 
 const ItemCard: FC<{ item: Item, index: number }> = ({ item, index }) => {
@@ -17,7 +17,7 @@ const ItemCard: FC<{ item: Item, index: number }> = ({ item, index }) => {
     const classes = useStyles({ topPosition: topPosition, leftPosition: leftPosition });
     useGlobalStyles();
 
-    return <span onClick={() => handleClick(item, index, elementRef.current || null, navigate, setLeftPosition, setTopPosition, setImageUrl, setIsAnimated)} key={index} className={`${classes.cardContainer} ${isAnimated ? classes.animated : ''}`}>
+    return <span onClick={() => handleItemClick(item, index, elementRef.current || null, navigate, setLeftPosition, setTopPosition, setImageUrl, setIsAnimated)} key={index} className={`${classes.cardContainer} ${isAnimated ? classes.animated : ''}`}>
         <span className={classes.cardContent}>
             <span className={classes.itemText}>
                 <h1>{item.title}</h1>
