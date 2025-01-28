@@ -20,5 +20,5 @@ export const handleItemClick = (item: Item, index: number, elementRef: HTMLDivEl
     setTimeout(() => {
         navigate(`${index}`);
         setIsAnimated(false);
-    }, 300);
+    }, 250);
 }
