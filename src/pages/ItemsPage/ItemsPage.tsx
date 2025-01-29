@@ -4,7 +4,7 @@ import { ItemsContext } from "../../contexts/ItemContext/ItemsContext";
 import Item from "../../types/item.type";
 import useStyles from "./styles";
 
-const ItemList: FC = () => {
+const ItemsPage: FC = () => {
     const classes = useStyles();
     const items: Item[] = useContext(ItemsContext);
 
@@ -19,4 +19,4 @@ const ItemList: FC = () => {
     </div>
 };
 
-export default ItemList;
+export default ItemsPage;

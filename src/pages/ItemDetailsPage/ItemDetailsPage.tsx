@@ -5,7 +5,7 @@ import { ItemsContext } from "../../contexts/ItemContext/ItemsContext";
 import useGlobalStyles from "../MainPage/styles";
 import useStyles from "./styles";
 
-const ItemDetails: FC = () => {
+const ItemDetailsPage: FC = () => {
     const { index } = useParams();
     const classes = useStyles();
     const items = useContext(ItemsContext);
@@ -25,5 +25,5 @@ const ItemDetails: FC = () => {
     </div>
 }
 
-export default ItemDetails;
+export default ItemDetailsPage;
 

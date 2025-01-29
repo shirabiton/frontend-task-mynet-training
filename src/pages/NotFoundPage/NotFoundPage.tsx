@@ -4,7 +4,7 @@ import { navigateToHome } from "../MainPage/functions";
 import useGlobalStyles from "../MainPage/styles";
 import useStyles from "./styles";
 
-const NotFound: FC = () => {
+const NotFoundPage: FC = () => {
     const navigate = useNavigate();
     const classes = useStyles();
     useGlobalStyles();
@@ -15,4 +15,4 @@ const NotFound: FC = () => {
         <button onClick={() => navigateToHome(navigate)}>לדף הבית</button>
     </div>
 }
-export default NotFound;
+export default NotFoundPage;

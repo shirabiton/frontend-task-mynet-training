@@ -1,9 +1,9 @@
 import { FC } from "react";
 import { Navigate, Route, Routes } from 'react-router-dom';
-import Header from "../../components/header";
-import ItemDetails from "../ItemDetails";
-import ItemList from "../ItemList";
-import NotFound from "../NotFound";
+import Header from "../../components/Header";
+import ItemDetails from "../ItemDetailsPage";
+import ItemList from "../ItemsPage";
+import NotFound from "../NotFoundPage";
 
 const MainPage: FC = () => {
     return <>
