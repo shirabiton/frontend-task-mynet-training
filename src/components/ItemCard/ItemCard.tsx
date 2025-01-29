@@ -1,6 +1,5 @@
 import { FC, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import useGlobalStyles from "../../pages/MainPage/styles";
 import Item from "../../types/item.type";
 import ItemImage from "../ItemImage";
 import { handleItemClick } from "./functions";
@@ -12,12 +11,10 @@ const ItemCard: FC<{ item: Item, index: number }> = ({ item, index }) => {
     const [isAnimated, setIsAnimated] = useState(false);
     const [leftPosition, setLeftPosition] = useState(0);
     const [topPosition, setTopPosition] = useState(0);
-    const [imageUrl, setImageUrl] = useState(item.content);
     const elementRef = useRef<HTMLDivElement>(null);
     const classes = useStyles({ topPosition: topPosition, leftPosition: leftPosition });
-    useGlobalStyles();
 
-    return <span onClick={() => handleItemClick(item, index, elementRef.current || null, navigate, setLeftPosition, setTopPosition, setImageUrl, setIsAnimated)} key={index} className={`${classes.cardContainer} ${isAnimated ? classes.animated : ''}`}>
+    return <span onClick={() => handleItemClick(index, elementRef.current || null, navigate, setLeftPosition, setTopPosition, setIsAnimated)} key={index} className={`${classes.cardContainer} ${isAnimated ? classes.animated : ''}`}>
         <span className={classes.cardContent}>
             <span className={classes.itemText}>
                 <h1>{item.title}</h1>
@@ -25,7 +22,7 @@ const ItemCard: FC<{ item: Item, index: number }> = ({ item, index }) => {
             </span>
             <span>
                 <span className={classes.imgContainer} ref={elementRef}>
-                    <ItemImage image={imageUrl} title={item.title}></ItemImage>
+                    <ItemImage image={item.content} title={item.title}></ItemImage>
                 </span>
             </span>
         </span>

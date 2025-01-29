@@ -1,13 +1,11 @@
 import { FC } from "react";
 import { useNavigate } from "react-router-dom";
-import { navigateToHome } from "../MainPage/functions";
-import useGlobalStyles from "../MainPage/styles";
+import { navigateToHome } from "../../utils/globalFunctions";
 import useStyles from "./styles";
 
 const NotFoundPage: FC = () => {
     const navigate = useNavigate();
     const classes = useStyles();
-    useGlobalStyles();
 
     return <div className={classes.notFoundContainer}>
         <h1>404</h1>

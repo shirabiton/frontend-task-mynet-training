@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { useNavigate } from "react-router-dom";
-import { navigateToHome } from "../../pages/MainPage/functions";
 import useStyles from "./styles";
+import { navigateToHome } from "../../utils/globalFunctions";
 
 const Header: FC = () => {
 

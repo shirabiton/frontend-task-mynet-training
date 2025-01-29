@@ -1,15 +1,15 @@
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import { ItemsProvider } from './contexts/ItemContext/ItemsProvider';
-import MainPage from './pages/MainPage';
+import Routes from "./Routes";
 
 function App() {
 
   return <ItemsProvider>
     <BrowserRouter>
-      <MainPage />
+      <Routes />
     </BrowserRouter>
   </ItemsProvider>
 }
 
-export default App
+export default App;

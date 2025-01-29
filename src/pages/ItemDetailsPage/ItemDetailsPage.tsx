@@ -2,7 +2,6 @@ import { FC, useContext } from "react";
 import { useParams } from "react-router-dom";
 import ItemImage from "../../components/ItemImage";
 import { ItemsContext } from "../../contexts/ItemContext/ItemsContext";
-import useGlobalStyles from "../MainPage/styles";
 import useStyles from "./styles";
 
 const ItemDetailsPage: FC = () => {
@@ -10,7 +9,6 @@ const ItemDetailsPage: FC = () => {
     const classes = useStyles();
     const items = useContext(ItemsContext);
     const currentItem = items[Number(index)];
-    useGlobalStyles();
 
     return <div className={classes.singleItemContainer}>
         {currentItem ?
