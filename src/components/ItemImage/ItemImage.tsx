@@ -1,18 +1,30 @@
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 import LQIPMedia from "../../types/lqip-media.type";
-import { isSlowConnection } from "./functions";
+import useStyles from "./styles";
 
 const ItemImage: FC<{ image: LQIPMedia, title: string }> = ({ image, title }) => {
-    const connectionType = navigator.connection && "effectiveType" in navigator.connection && typeof navigator.connection.effectiveType === "string"
-        ? navigator.connection.effectiveType : "4g";
-    const isSlow = isSlowConnection(connectionType);
-    const baseUrl = isSlow ? image.lowQuality : image.highQuality;
+    const [baseUrl, setBaseUrl] = useState(image.lowQuality);
+    const [isLoaded, setIsLoaded] = useState(false);
+    const classes = useStyles();
+
+    useEffect(() => {
+        const img = new Image();
+        img.src = image.highQuality.lowResolution;
+        img.onload = function () {
+            setBaseUrl(image.highQuality);
+            setIsLoaded(true);
+        }
+        return () => {
+            img.onload = null;
+        }
+    }, [image]);
 
     return <img
         src={baseUrl.lowResolution} // default url
         srcSet={`${baseUrl.lowResolution} 400w, ${baseUrl.highResolution} 800w`}
         alt={title}
         title={title}
+        className={!isLoaded ? classes.loading : ''}
     />
 }
 export default ItemImage;

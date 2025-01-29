@@ -1,10 +1,9 @@
 import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
-    imgContainer: {
-        width: '10vw',
-        height: '10vw',
-        overflow: 'hidden'
+    loading: {
+        filter: "blur(2px)",
+        transition: "filter 2s ease-in-out",
     }
 });
 

@@ -79,7 +79,7 @@ const useStyles = createUseStyles({
             height: '10vw',
             willChange: 'transform',
             animationName: '$cssAnimation',
-            animationDuration: '0.2s',
+            animationDuration: '0.1s',
             animationIterationCount: '1',
             animationTimingFunction: 'ease-in-out',
             animationFillMode: 'forwards',
