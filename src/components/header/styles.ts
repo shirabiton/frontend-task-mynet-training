@@ -16,6 +16,13 @@ const useStyles = createUseStyles({
         display: 'inline-block',
       }
     }
+  },
+  headerContent: {
+    width: '80%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    margin: '0 auto'
   }
 })
 

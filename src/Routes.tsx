@@ -3,6 +3,7 @@ import { Navigate, RouteObject, useRoutes } from "react-router-dom";
 import Header from "./components/header";
 import PrivateRouter from "./PrivateRouter";
 import { ROUTES_NAMES } from "./utils/globalConsts";
+import Footer from "./components/Footer/Footer";
 
 const ItemsPage = lazy(() => import("./pages/ItemsPage"));
 const ItemDetailsPage = lazy(() => import("./pages/ItemDetailsPage"));
@@ -20,7 +21,8 @@ const AppRoutes: React.FC = () => {
 
     return <>
         <Header />
-        <Suspense fallback={<></>}>{routesElement}</Suspense>;
-    </>
+        <Suspense fallback={<></>}>{routesElement}</Suspense>
+        <Footer />
+    </>;
 }
 export default AppRoutes;
